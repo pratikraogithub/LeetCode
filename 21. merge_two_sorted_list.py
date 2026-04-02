@@ -6,6 +6,7 @@
 
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        # optional means list can have listnode or empty also
 
         # list1 and list2 are HEAD nodes of two linked lists
         
