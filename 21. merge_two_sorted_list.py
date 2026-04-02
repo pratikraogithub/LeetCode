@@ -58,3 +58,9 @@ class Solution:
 #       current
 # 👉 current moves forward
 # 👉 dummy stays at start
+
+
+# Notes:
+# 'current' always points to the LAST node of the result list
+# Move current forward so next node is attached at the end
+# Remaining list is already sorted, so attach directly
