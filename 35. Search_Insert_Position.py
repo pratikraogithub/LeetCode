@@ -128,3 +128,74 @@ class Solution:
 
 
 
+# note: 
+# The loop condition:
+
+# while left <= right:
+
+# does only one thing:
+
+# 👉 decides whether to run the loop again
+
+# It does NOT change left or right.
+
+# 🔍 Step-by-step for your example
+# nums = [1, 3, 5, 6]
+# target = 2
+# Initial
+# left = 0
+# right = 3
+
+# Condition:
+
+# 0 <= 3 → True
+
+# Loop runs.
+
+# Iteration 1
+# mid = (0 + 3) // 2 = 1
+# nums[mid] = 3
+
+# Since:
+
+# 2 < 3
+
+# Run:
+
+# right = mid - 1
+
+# Now:
+
+# left = 0
+# right = 0
+# Check loop again
+# 0 <= 0 → True
+
+# Loop runs again.
+
+# Iteration 2
+# mid = (0 + 0) // 2 = 0
+# nums[mid] = 1
+
+# Since:
+
+# 2 > 1
+
+# Run:
+
+# left = mid + 1
+
+# Now:
+
+# left = 1
+# right = 0
+
+# 👉 This is when left becomes 1.
+
+# Check loop again
+
+# Condition:
+
+# 1 <= 0 → False
+
+# Loop stops.
